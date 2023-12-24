@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		39A1E71F2B3713AC0085C693 /* ChristmasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1E71E2B3713AC0085C693 /* ChristmasApp.swift */; };
-		39A1E7212B3713AC0085C693 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1E7202B3713AC0085C693 /* ContentView.swift */; };
+		39A1E7212B3713AC0085C693 /* Christmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1E7202B3713AC0085C693 /* Christmas.swift */; };
 		39A1E7232B3713AE0085C693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E7222B3713AE0085C693 /* Assets.xcassets */; };
 		39A1E7262B3713AE0085C693 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A1E7252B3713AE0085C693 /* Preview Assets.xcassets */; };
+		39A1E7482B3717090085C693 /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 39A1E7472B3717090085C693 /* EffectsLibrary */; };
+		39A1E74A2B38512F0085C693 /* ChristmasTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1E7492B38512F0085C693 /* ChristmasTreeView.swift */; };
+		39A1E74E2B3853410085C693 /* AnimatedGradientTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1E74D2B3853410085C693 /* AnimatedGradientTextView.swift */; };
+		39A1E7502B3855910085C693 /* AnimatedSizeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1E74F2B3855910085C693 /* AnimatedSizeText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39A1E71B2B3713AC0085C693 /* Christmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Christmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A1E71E2B3713AC0085C693 /* ChristmasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasApp.swift; sourceTree = "<group>"; };
-		39A1E7202B3713AC0085C693 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39A1E7202B3713AC0085C693 /* Christmas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christmas.swift; sourceTree = "<group>"; };
 		39A1E7222B3713AE0085C693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39A1E7252B3713AE0085C693 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39A1E7492B38512F0085C693 /* ChristmasTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasTreeView.swift; sourceTree = "<group>"; };
+		39A1E74D2B3853410085C693 /* AnimatedGradientTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientTextView.swift; sourceTree = "<group>"; };
+		39A1E74F2B3855910085C693 /* AnimatedSizeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSizeText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A1E7482B3717090085C693 /* EffectsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +59,9 @@
 		39A1E71D2B3713AC0085C693 /* Christmas */ = {
 			isa = PBXGroup;
 			children = (
-				39A1E71E2B3713AC0085C693 /* ChristmasApp.swift */,
-				39A1E7202B3713AC0085C693 /* ContentView.swift */,
+				39A1E74C2B3851400085C693 /* App */,
+				39A1E74B2B3851350085C693 /* Components */,
+				39A1E7202B3713AC0085C693 /* Christmas.swift */,
 				39A1E7222B3713AE0085C693 /* Assets.xcassets */,
 				39A1E7242B3713AE0085C693 /* Preview Content */,
 			);
@@ -65,6 +74,24 @@
 				39A1E7252B3713AE0085C693 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39A1E74B2B3851350085C693 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				39A1E7492B38512F0085C693 /* ChristmasTreeView.swift */,
+				39A1E74D2B3853410085C693 /* AnimatedGradientTextView.swift */,
+				39A1E74F2B3855910085C693 /* AnimatedSizeText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		39A1E74C2B3851400085C693 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				39A1E71E2B3713AC0085C693 /* ChristmasApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = Christmas;
+			packageProductDependencies = (
+				39A1E7472B3717090085C693 /* EffectsLibrary */,
+			);
 			productName = Christmas;
 			productReference = 39A1E71B2B3713AC0085C693 /* Christmas.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 39A1E7122B3713AC0085C693;
+			packageReferences = (
+				39A1E7462B3717080085C693 /* XCRemoteSwiftPackageReference "effects-library" */,
+			);
 			productRefGroup = 39A1E71C2B3713AC0085C693 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39A1E7212B3713AC0085C693 /* ContentView.swift in Sources */,
+				39A1E7212B3713AC0085C693 /* Christmas.swift in Sources */,
+				39A1E7502B3855910085C693 /* AnimatedSizeText.swift in Sources */,
+				39A1E74A2B38512F0085C693 /* ChristmasTreeView.swift in Sources */,
+				39A1E74E2B3853410085C693 /* AnimatedGradientTextView.swift in Sources */,
 				39A1E71F2B3713AC0085C693 /* ChristmasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Christmas/Preview Content\"";
+				DEVELOPMENT_TEAM = VK8W64RM87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Christmas/Preview Content\"";
+				DEVELOPMENT_TEAM = VK8W64RM87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39A1E7462B3717080085C693 /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39A1E7472B3717090085C693 /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39A1E7462B3717080085C693 /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39A1E7132B3713AC0085C693 /* Project object */;
 }

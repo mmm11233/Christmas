@@ -11,7 +11,7 @@ import SwiftUI
 struct ChristmasApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Christmas()
         }
     }
 }
